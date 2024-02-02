@@ -21,3 +21,11 @@ multiplicación_por_sumas_sucesivas <- function(a , b) {
 
   }
 }
+
+potencia_por_sumas_sucesivas <- function(base , exponet) {
+  if(exponet==0){
+    return(1)
+  }else{
+    return(base*potencia_por_sumas_sucesivas(base,exponet-1))
+  }
+}
